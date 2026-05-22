@@ -511,6 +511,107 @@ h4 {
   font-size: 0.9rem;
 }
 
+.menu-controls {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-search {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px 18px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-card);
+  color: var(--color-text);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.menu-search:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.menu-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.filter-btn {
+  padding: 10px 22px;
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+}
+
+.hidden-item {
+  display: none !important;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+.food-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.food-tag.veg {
+  background-color: rgba(72, 187, 120, 0.15);
+  color: #48bb78;
+}
+
+.food-tag.nonveg {
+  background-color: rgba(201, 74, 74, 0.15);
+  color: #ff7b7b;
+}
+.food-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: var(--color-bg-card);
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.food-image {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.food-content {
+  flex: 1;
+}
+
+.food-content p {
+  margin-top: 10px;
+}
+
 /* Reservation Section */
 .reservation {
   position: relative;
