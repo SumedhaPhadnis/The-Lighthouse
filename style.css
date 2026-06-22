@@ -778,6 +778,7 @@ body.light-theme .btn-outline:hover {
 .food-card > * {
   position: relative;
   z-index: 2;
+  min-height: 420px;
 }
 .food-image {
   width: 220px;
@@ -788,13 +789,21 @@ body.light-theme .btn-outline:hover {
 }
 
 .food-content {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-
 .food-content p {
   margin-top: 10px;
 }
 
+.allergen-info {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #c0392b;
+  font-weight: 500;
+  line-height: 1.4;
+}
 /* Reservation Section */
 .reservation {
   position: relative;
